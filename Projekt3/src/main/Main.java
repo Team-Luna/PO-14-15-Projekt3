@@ -239,49 +239,114 @@ public class Main extends javax.swing.JFrame {
     private void updateSlider(int slider) {
         switch (slider) {
             case 1:
-                
+                jSlider2.setValue(jSlider1.getValue());
+                jSlider3.setValue(jSlider1.getValue());
+                jSlider4.setValue(jSlider1.getValue());
+                jSlider5.setValue(jSlider1.getValue());
+                jSlider6.setValue(jSlider1.getValue());
+                jSlider7.setValue(jSlider1.getValue());
+                jSlider8.setValue(jSlider1.getValue());
+                jSlider9.setValue(jSlider1.getValue());
+                jSlider10.setValue(100 - jSlider1.getValue());
                 break;
             case 2:
-                
+                jSlider1.setValue(jSlider2.getValue());
+                jSlider3.setValue(jSlider2.getValue());
+                jSlider4.setValue(jSlider2.getValue());
+                jSlider5.setValue(jSlider2.getValue());
+                jSlider6.setValue(jSlider2.getValue());
+                jSlider7.setValue(jSlider2.getValue());
+                jSlider8.setValue(jSlider2.getValue());
+                jSlider9.setValue(jSlider2.getValue());
+                jSlider10.setValue(100 - jSlider2.getValue());
                 break;
             case 3:
-                
+                jSlider2.setValue(jSlider3.getValue());
+                jSlider1.setValue(jSlider3.getValue());
+                jSlider4.setValue(jSlider3.getValue());
+                jSlider5.setValue(jSlider3.getValue());
+                jSlider6.setValue(jSlider3.getValue());
+                jSlider7.setValue(jSlider3.getValue());
+                jSlider8.setValue(jSlider3.getValue());
+                jSlider9.setValue(jSlider3.getValue());
+                jSlider10.setValue(100 - jSlider3.getValue());
                 break;
             case 4:
-                
+                jSlider2.setValue(jSlider4.getValue());
+                jSlider3.setValue(jSlider4.getValue());
+                jSlider1.setValue(jSlider4.getValue());
+                jSlider5.setValue(jSlider4.getValue());
+                jSlider6.setValue(jSlider4.getValue());
+                jSlider7.setValue(jSlider4.getValue());
+                jSlider8.setValue(jSlider4.getValue());
+                jSlider9.setValue(jSlider4.getValue());
+                jSlider10.setValue(100 - jSlider4.getValue());
                 break;
             case 5:
-                
+                jSlider2.setValue(jSlider5.getValue());
+                jSlider3.setValue(jSlider5.getValue());
+                jSlider4.setValue(jSlider5.getValue());
+                jSlider1.setValue(jSlider5.getValue());
+                jSlider6.setValue(jSlider5.getValue());
+                jSlider7.setValue(jSlider5.getValue());
+                jSlider8.setValue(jSlider5.getValue());
+                jSlider9.setValue(jSlider5.getValue());
+                jSlider10.setValue(100 - jSlider5.getValue());
                 break;
             case 6:
-                
+                jSlider2.setValue(jSlider6.getValue());
+                jSlider3.setValue(jSlider6.getValue());
+                jSlider4.setValue(jSlider6.getValue());
+                jSlider5.setValue(jSlider6.getValue());
+                jSlider1.setValue(jSlider6.getValue());
+                jSlider7.setValue(jSlider6.getValue());
+                jSlider8.setValue(jSlider6.getValue());
+                jSlider9.setValue(jSlider6.getValue());
+                jSlider10.setValue(100 - jSlider6.getValue());
                 break;
             case 7:
-                
+                jSlider2.setValue(jSlider7.getValue());
+                jSlider3.setValue(jSlider7.getValue());
+                jSlider4.setValue(jSlider7.getValue());
+                jSlider5.setValue(jSlider7.getValue());
+                jSlider6.setValue(jSlider7.getValue());
+                jSlider1.setValue(jSlider7.getValue());
+                jSlider8.setValue(jSlider7.getValue());
+                jSlider9.setValue(jSlider7.getValue());
+                jSlider10.setValue(100 - jSlider7.getValue());
+                break;
             case 8:
-                
+                jSlider2.setValue(jSlider8.getValue());
+                jSlider3.setValue(jSlider8.getValue());
+                jSlider4.setValue(jSlider8.getValue());
+                jSlider5.setValue(jSlider8.getValue());
+                jSlider6.setValue(jSlider8.getValue());
+                jSlider7.setValue(jSlider8.getValue());
+                jSlider1.setValue(jSlider8.getValue());
+                jSlider9.setValue(jSlider8.getValue());
+                jSlider10.setValue(100 - jSlider8.getValue());
                 break;
             case 9:
-                jSlider1.setValue(100 - jSlider10.getValue());
-                jSlider2.setValue(jSlider10.getValue());
-                jSlider3.setValue(jSlider10.getValue());
-                jSlider4.setValue(jSlider10.getValue());
-                jSlider5.setValue(jSlider10.getValue());
-                jSlider6.setValue(jSlider10.getValue());
-                jSlider7.setValue(jSlider10.getValue());
-                jSlider8.setValue(jSlider10.getValue());
-                jSlider9.setValue(jSlider10.getValue());
+                jSlider2.setValue(jSlider9.getValue());
+                jSlider3.setValue(jSlider9.getValue());
+                jSlider4.setValue(jSlider9.getValue());
+                jSlider5.setValue(jSlider9.getValue());
+                jSlider6.setValue(jSlider9.getValue());
+                jSlider7.setValue(jSlider9.getValue());
+                jSlider8.setValue(jSlider9.getValue());
+                jSlider1.setValue(jSlider9.getValue());
+                jSlider10.setValue(100 - jSlider9.getValue());
                 break;
             case 10:
+                jSlider2.setValue(100 - jSlider10.getValue());
+                jSlider3.setValue(100 - jSlider10.getValue());
+                jSlider4.setValue(100 - jSlider10.getValue());
+                jSlider5.setValue(100 - jSlider10.getValue());
+                jSlider6.setValue(100 - jSlider10.getValue());
+                jSlider7.setValue(100 - jSlider10.getValue());
+                jSlider8.setValue(100 - jSlider10.getValue());
+                jSlider9.setValue(100 - jSlider10.getValue());
                 jSlider1.setValue(100 - jSlider10.getValue());
-                jSlider2.setValue(jSlider10.getValue());
-                jSlider3.setValue(jSlider10.getValue());
-                jSlider4.setValue(jSlider10.getValue());
-                jSlider5.setValue(jSlider10.getValue());
-                jSlider6.setValue(jSlider10.getValue());
-                jSlider7.setValue(jSlider10.getValue());
-                jSlider8.setValue(jSlider10.getValue());
-                jSlider9.setValue(jSlider10.getValue());
                 break;
             default:
                 throw new UnsupportedOperationException("Not supported yet.");
