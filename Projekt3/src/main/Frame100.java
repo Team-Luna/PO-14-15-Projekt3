@@ -14,6 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JSlider;
 import javax.swing.SwingUtilities;
+import javax.swing.event.ChangeListener;
 
 /**
  *
@@ -34,22 +35,50 @@ public class Frame100 extends javax.swing.JFrame {
         JSlider that = (JSlider) evt.getSource();
         for (JSlider s : normalSliders) {
             if (!s.equals(that)) {
+                ChangeListener[] temp = s.getChangeListeners();
+                for (ChangeListener cl : temp) {
+                    s.removeChangeListener(cl);
+                }
                 s.setValue(that.getValue());
+                for (ChangeListener cl : temp) {
+                    s.addChangeListener(cl);
+                }
             }
         }
         for (JSlider s : reverseSliders) {
+            ChangeListener[] temp = s.getChangeListeners();
+            for (ChangeListener cl : temp) {
+                s.removeChangeListener(cl);
+            }
             s.setValue(100 - that.getValue());
+            for (ChangeListener cl : temp) {
+                s.addChangeListener(cl);
+            }
         }
     }
 
     private static void jSliderRStateChanged(javax.swing.event.ChangeEvent evt) {
         JSlider that = (JSlider) evt.getSource();
         for (JSlider s : normalSliders) {
+            ChangeListener[] temp = s.getChangeListeners();
+            for (ChangeListener cl : temp) {
+                s.removeChangeListener(cl);
+            }
             s.setValue(100 - that.getValue());
+            for (ChangeListener cl : temp) {
+                s.addChangeListener(cl);
+            }
         }
         for (JSlider s : reverseSliders) {
             if (!s.equals(that)) {
-                s.setValue(100 - that.getValue());
+                ChangeListener[] temp = s.getChangeListeners();
+                for (ChangeListener cl : temp) {
+                    s.removeChangeListener(cl);
+                }
+                s.setValue(that.getValue());
+                for (ChangeListener cl : temp) {
+                    s.addChangeListener(cl);
+                }
             }
         }
     }
@@ -91,7 +120,7 @@ public class Frame100 extends javax.swing.JFrame {
                     @Override
                     public void run() {
                         frame.add(getNormalSlider());
-                        //frame.validate();
+                        frame.validate();
                         frame.repaint();
                     }
                 });
@@ -114,22 +143,22 @@ public class Frame100 extends javax.swing.JFrame {
                         });
                         reverseSliders.add(slider);
                         frame.add(getReverseSlider());
-                        //frame.validate();
+                        frame.validate();
                         frame.repaint();
                     }
                 });
             }
         }));
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 40; i++) {
             frame.add(getNormalSlider());
         }
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 10; i++) {
             frame.add(getReverseSlider());
         }
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 1000);
+        frame.setSize(400, 2000);
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
